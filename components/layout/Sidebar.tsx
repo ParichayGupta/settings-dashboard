@@ -5,7 +5,7 @@ import { UserCircle2, Power } from "lucide-react";
 export default function Sidebar() {
     const [active, setActive] = useState<string>("Solutions");
     return (
-      <aside className="hidden w-56 shrink-0 flex-col border-r border-gray-200 bg-white px-4 py-5 lg:flex ">
+      <aside className="hidden w-56 shrink-0 flex-col border-r border-gray-200 bg-gray-100 px-4 py-5 lg:flex ">
         <nav className="flex-1 space-y-6 overflow-y-auto" aria-label="Primary">
           {NAV_SECTIONS.map((section) => (
             <div key={section.heading} >

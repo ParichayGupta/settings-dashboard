@@ -18,14 +18,14 @@ export default function Header(){
   }, [showNotifications]);
 
   return (
-    <header className="flex items-center justify-between border-b border-gray-500 bg-white px-6 py-2">
+    <header className="flex items-center justify-between border-b border-gray-500 bg-gray-100 px-6 py-2">
       <img src={kpmg.src} alt="Logo" className="w-24" />
       <div className="flex items-center justify-between gap-4">
         <button
           type="button"
           aria-label="Notifications"
           onClick={() => setShowNotifications((s) => !s)}
-          className="relative flex h-9 w-9 items-center justify-center rounded-full bg-gray-50 text-gray-500  text-gray-900 border-b border-gray-900 hover:bg-gray-100">
+          className="relative flex h-9 w-9 items-center justify-center text-gray-900">
           <Bell size={16} />
           <span className="absolute right-2 top-2 h-1.5 w-1.5 rounded-full bg-red-500" />
         </button>
@@ -39,7 +39,7 @@ export default function Header(){
         <button
           type="button"
           aria-label="Toggle dark mode"
-          className="flex h-9 w-9 items-center justify-center rounded-full bg-gray-100 text-gray-900 border-b border-gray-900 hover:bg-gray-400">
+          className="flex h-9 w-9 items-center justify-center text-gray-900">
         <Moon size={16} />
         </button>
       </div>
