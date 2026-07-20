@@ -51,8 +51,6 @@ export interface NavItem {
   icon: LucideIcon;
 }
 
-
-
 export type TrendDirection = "up" | "down";
 
 export interface ProductivityRow {
