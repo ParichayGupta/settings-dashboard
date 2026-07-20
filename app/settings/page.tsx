@@ -3,6 +3,8 @@
 import Sidebar from "@/components/layout/Sidebar";
 import Header from "@/components/layout/Header";
 import PageHeader from "@/components/settings/PageHeader";
+import StatsRow from "@/components/settings/StatsRow";
+import { STAT_CARDS } from "@/assets/mock-data";
 
 export default function SettingsPage() {
   return (
@@ -15,6 +17,7 @@ export default function SettingsPage() {
             </div>
             <div className="flex flex-1 flex-col space-y-4 px-4 py-5 sm:px-6">
             <PageHeader username="Parichay Gupta" lastUpdated="21/07/26" createdOn="18/07/26" />
+            <StatsRow cards={STAT_CARDS} />
             </div>
         </main>
       </div>
